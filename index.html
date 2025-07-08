@@ -1,49 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currency Tracker</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <div class="container">
-        <h1>💱 Currency Tracker</h1>
-        <label for="base-currency">Base Currency:</label>
-        <select id="base-currency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="INR">INR</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-        </select>
-        <button id="get-rates">Get Rates</button>
-        <div id="output"></div>
-    </div>
-    <script>
-        document.getElementById('get-rates').addEventListener('click', () => {
-            const base = document.getElementById('base-currency').value;
-            fetch(`/api?base=${base}`)
-                .then(res => res.json())
-                .then(data => {
-                    const out = document.getElementById('output');
-                    out.innerHTML = `<h3>Rates for ${base}</h3>`;
-                    ['USD', 'EUR', 'INR', 'GBP', 'JPY'].forEach(curr => {
-                        if (curr !== base && data.rates[curr]) {
-                            out.innerHTML += `<p>1 ${base} = ${data.rates[curr]} ${curr}</p>`;
-                        }
-                    });
-                })
-                .catch(err => {
-                    document.getElementById('output').innerText = 'Error loading data.';
-                });
-        });
-    </script>
-</body>
-
-</html> -->
 
 
 <!DOCTYPE html>
