@@ -1,0 +1,165 @@
+ /* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+button,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eef;
+  border-radius: 6px;
+} 
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: 'Inter', sans-serif;
+ }
+
+ .app-background {
+   height: 100vh;
+   background: linear-gradient(135deg, #ed4264, #ffedbc);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+ }
+
+ .card {
+   background-color: #ffffff;
+   padding: 40px;
+   border-radius: 20px;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 400px;
+   text-align: center;
+ }
+
+ .title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+
+ .title img {
+   width: 30px;
+   height: 30px;
+ }
+
+ h1 {
+   font-size: 24px;
+   color: #222;
+ }
+
+ label {
+   font-weight: 600;
+   display: block;
+   margin: 20px 0 10px;
+   color: #444;
+   text-align: left;
+ }
+
+ select {
+   width: 100%;
+   padding: 12px;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   font-size: 16px;
+ }
+
+ button {
+   margin-top: 20px;
+   width: 100%;
+   padding: 14px;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: #ed4264;
+   color: #fff;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+ }
+
+ button:hover {
+   background-color: #d52c4d;
+ }
+
+
+.output-box {
+  margin-top: 30px;
+  padding: 24px;
+  background-color: #ed4264;
+  /* Red-pink tone */
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.output-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.output-box p {
+  margin: 6px 0;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.15);
+  /* soft white overlay */
+  border-radius: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+} 
+
+
+
+ /* Optional fade-in effect */
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: translateY(10px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ }
